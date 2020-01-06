@@ -4,9 +4,39 @@
   <title>0archive</title>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <style>body { font-family: "system-ui", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Helvetica", "Arial", sans-serif; }</style>
+  <style>
+:root {
+  --za-primary-dark-color: #000220;
+  --za-primary-light-color: #FFBA95;
+}
+body {
+  font-family: "system-ui", "-apple-system", "BlinkMacSystemFont", "Helvetica Neue", "Helvetica", "Arial", sans-serif;
+  background-color: var(--za-primary-light-color);
+  color: var(--za-primary-dark-color);
+  margin: 0;
+}
+a {
+  text-decoration: none;
+}
+.start {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 2rem 0;
+}
+.start > label {
+  background-color: var(--za-primary-dark-color);
+  color: var(--za-primary-light-color);
+  line-height: 1;
+  padding: 0.75rem 1rem;
+  border-radius: 1.25rem;
+  cursor: pointer;
+}
+  </style>
 </head>
 <body>
-  <a href="https://g0v.hackmd.io/@chihao/0archive/">Start here.</a>
+  <a class="start" href="https://g0v.hackmd.io/@chihao/0archive/">
+    <img src="images/0archive-logo-light-small.png" width="64" /><label>Start here.</label>
+  </a>
 </body>
 </html>
